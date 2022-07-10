@@ -1,0 +1,106 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.shafira.movieid"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:6:5-67
+11-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.WAKE_LOCK" />
+12-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:7:5-68
+12-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:7:22-65
+13    <uses-permission android:name="android.permission.VIBRATE" />
+13-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:8:5-66
+13-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:8:22-63
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->[io.realm:realm-android-library-object-server:5.1.0] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\11d5ed5b2b56c92f48409c88b6f7d490\jetified-realm-android-library-object-server-5.1.0\AndroidManifest.xml:10:5-79
+14-->[io.realm:realm-android-library-object-server:5.1.0] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\11d5ed5b2b56c92f48409c88b6f7d490\jetified-realm-android-library-object-server-5.1.0\AndroidManifest.xml:10:22-76
+15
+16    <application
+16-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:10:5-46:19
+17        android:allowBackup="true"
+17-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:11:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.3.0] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\56b8faf7ef3b4d033ffa4daba09a688f\core-1.3.0\AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:icon="@mipmap/video_player"
+20-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:12:9-44
+21        android:label="@string/app_name"
+21-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:13:9-41
+22        android:roundIcon="@mipmap/video_player"
+22-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:14:9-49
+23        android:supportsRtl="true"
+23-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:15:9-35
+24        android:theme="@style/AppTheme"
+24-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:16:9-40
+25        android:usesCleartextTraffic="true" >
+25-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:17:9-44
+26        <activity android:name="com.shafira.movieid.activities.SettingActivity" />
+26-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:19:9-83
+26-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:19:19-80
+27        <activity android:name="com.shafira.movieid.activities.DetailMovieActivity" />
+27-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:20:9-87
+27-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:20:19-84
+28        <activity android:name="com.shafira.movieid.activities.DetailTelevisionActivity" />
+28-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:21:9-92
+28-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:21:19-89
+29        <activity
+29-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:22:9-25:54
+30            android:name="com.shafira.movieid.activities.MainActivity"
+30-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:23:13-71
+31            android:configChanges="keyboardHidden|orientation|screenSize"
+31-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:24:13-74
+32            android:windowSoftInputMode="adjustPan" />
+32-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:25:13-52
+33        <activity android:name="com.shafira.movieid.activities.SplashscreenActivity" >
+33-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:26:13-33:20
+33-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:26:23-89
+34            <intent-filter>
+34-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:28:13-32:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:29:17-69
+35-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:29:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:31:17-77
+37-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:31:27-74
+38            </intent-filter>
+39        </activity>
+40
+41        <receiver
+41-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:35:9-39:47
+42            android:name="com.shafira.movieid.notification.NotificationReleaseReceiver"
+42-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:36:13-88
+43            android:enabled="true"
+43-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:37:13-35
+44            android:exported="true" />
+44-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:38:13-36
+45        <receiver
+45-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:41:9-45:47
+46            android:name="com.shafira.movieid.notification.NotificationDailyReceiver"
+46-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:42:13-86
+47            android:enabled="true"
+47-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:43:13-35
+48            android:exported="true" />
+48-->E:\Android Java\Movie ID\app\src\main\AndroidManifest.xml:44:13-36
+49
+50        <provider
+50-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\9dc5c375da571326294070b4d59ce80f\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+51            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+51-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\9dc5c375da571326294070b4d59ce80f\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+52            android:authorities="com.shafira.movieid.lifecycle-process"
+52-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\9dc5c375da571326294070b4d59ce80f\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+53            android:exported="false"
+53-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\9dc5c375da571326294070b4d59ce80f\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+54            android:multiprocess="true" />
+54-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\9dc5c375da571326294070b4d59ce80f\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+55    </application>
+56
+57</manifest>

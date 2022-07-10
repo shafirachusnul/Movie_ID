@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shafira.movieid">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/video_player"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/video_player"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name="com.shafira.movieid.activities.SettingActivity" />
+        <activity android:name="com.shafira.movieid.activities.DetailMovieActivity" />
+        <activity android:name="com.shafira.movieid.activities.DetailTelevisionActivity" />
+        <activity
+            android:name="com.shafira.movieid.activities.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan"/>
+            <activity android:name="com.shafira.movieid.activities.SplashscreenActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.shafira.movieid.notification.NotificationReleaseReceiver"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="ExportedReceiver" />
+
+        <receiver
+            android:name="com.shafira.movieid.notification.NotificationDailyReceiver"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="ExportedReceiver" />
+    </application>
+
+</manifest>
